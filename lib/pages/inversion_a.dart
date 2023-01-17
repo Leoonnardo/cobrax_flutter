@@ -22,10 +22,14 @@ class _InversionPageState extends State<InversionPage> {
 
     return MaterialApp(
         home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Inversion'),
-            backgroundColor: Colors.black,
-          ),
+            appBar: AppBar(
+              title: const Text('Inversion'),
+              backgroundColor: Colors.black,
+              leading: Image.asset(
+                "assets/images/icon_cobrax.png",
+                scale: 8,
+              ),
+            ),
             body: Container(
                 // color: ColorSelect.container,
                 width: size.width,
@@ -110,7 +114,10 @@ class _InversionPageState extends State<InversionPage> {
         titulo,
         textScaleFactor: 1.2,
       ),
-      trailing: Text(subtitulo, textScaleFactor: 1.2,),
+      trailing: Text(
+        subtitulo,
+        textScaleFactor: 1.2,
+      ),
     );
   }
 

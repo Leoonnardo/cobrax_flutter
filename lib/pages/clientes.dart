@@ -26,6 +26,10 @@ class _ClientesState extends State<Clientes> {
             appBar: AppBar(
               title: const Text('Clientes inversion'),
               backgroundColor: Colors.black,
+              leading: Image.asset(
+              "assets/images/icon_cobrax.png",
+              scale: 8,
+            ),
             ),
             body: SizedBox(
                 // color: ColorSelect.container,

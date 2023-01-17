@@ -24,6 +24,10 @@ class _Amortizacion1State extends State<Amortizacion1> {
             appBar: AppBar(
               title: const Text('Cliente Invf001'),
               backgroundColor: Colors.black,
+              leading: Image.asset(
+                "assets/images/icon_cobrax.png",
+                scale: 8,
+              ),
             ),
             body: SizedBox(
                 // color: ColorSelect.container,

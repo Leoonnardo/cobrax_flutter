@@ -22,10 +22,14 @@ class _VsInversionState extends State<VsInversion> {
 
     return MaterialApp(
         home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Inversiones'),
-            backgroundColor: Colors.black,
-          ),
+            appBar: AppBar(
+              title: const Text('Inversiones'),
+              backgroundColor: Colors.black,
+              leading: Image.asset(
+                "assets/images/icon_cobrax.png",
+                scale: 8,
+              ),
+            ),
             body: SizedBox(
                 // color: ColorSelect.container,
                 width: size.width,
@@ -50,8 +54,8 @@ class _VsInversionState extends State<VsInversion> {
                               itemBuilder: (context, index) => Card(
                                 color: Colors.amber,
                                 child: ListTile(
-                                  title: Text(
-                                      "Semana: ${data[index]["semanas"]}"),
+                                  title:
+                                      Text("Semana: ${data[index]["semanas"]}"),
                                   trailing: TextButton(
                                       style: ElevatedButton.styleFrom(
                                         // backgroundColor: ColorSelect.button,

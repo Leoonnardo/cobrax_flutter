@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {    
+  Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Cobrax',
@@ -28,17 +28,14 @@ class MyApp extends StatelessWidget {
         'inicio': (_) => const MenuPage(),
         'tablaAmortizacion': (_) => const TablaAmortizacion(),
         'clienteInversion': (_) => const ClienteInversion(),
-
         'inversion_a': (_) => const InversionPage(),
         'apsara_p_capital': (_) => const ApsaraPrestamoCapital(),
         'ashir_p_capital': (_) => const AshirPrestamoCapital(),
-
         'clientes': (_) => const Clientes(),
         'vs_inversion': (_) => const VsInversion(),
         'amortizacion1': (_) => const Amortizacion1(),
         'amortizacion2': (_) => const Amortizacion2(),
         'amortizacion3': (_) => const Amortizacion3(),
-
       },
     );
   }

@@ -26,11 +26,15 @@ class _MenuPageState extends State<MenuPage> {
           appBar: AppBar(
             title: const Text('Cobrax'),
             backgroundColor: Colors.black,
+            leading: Image.asset(
+              "assets/images/icon_cobrax.png",
+              scale: 8,
+            ),
           ),
           body: Column(
             children: [
-          cardSeccion(listTitles[0], "tablaAmortizacion"),
-          cardSeccion(listTitles[1], "clienteInversion")
+              cardSeccion(listTitles[0], "tablaAmortizacion"),
+              cardSeccion(listTitles[1], "clienteInversion")
             ],
           ),
         ));
@@ -38,8 +42,10 @@ class _MenuPageState extends State<MenuPage> {
 
   Card cardSeccion(titulo, ruta) {
     return Card(
-      color: Colors.blue,
+      elevation: 8,
+      color: Color(0xFF00B63F),
       child: ListTile(
+        minVerticalPadding: 40,
         title: Text(titulo),
         trailing: TextButton(
             style: ElevatedButton.styleFrom(

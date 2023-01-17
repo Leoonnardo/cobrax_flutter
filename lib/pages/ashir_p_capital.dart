@@ -21,10 +21,14 @@ class _AshirPrestamoCapitalState extends State<AshirPrestamoCapital> {
 
     return MaterialApp(
         home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Ashir'),
-            backgroundColor: Colors.black,
-          ),
+            appBar: AppBar(
+              title: const Text('Ashir'),
+              backgroundColor: Colors.black,
+              leading: Image.asset(
+                "assets/images/icon_cobrax.png",
+                scale: 8,
+              ),
+            ),
             body: SizedBox(
                 // color: ColorSelect.container,
                 width: size.width,

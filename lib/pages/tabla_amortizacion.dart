@@ -21,6 +21,10 @@ class _TablaAmortizacionState extends State<TablaAmortizacion> {
       appBar: AppBar(
         title: const Text('Tabla de amortizacion'),
         backgroundColor: Colors.black,
+        leading: Image.asset(
+          "assets/images/icon_cobrax.png",
+          scale: 8,
+        ),
       ),
       body: Column(
         children: [
@@ -34,8 +38,9 @@ class _TablaAmortizacionState extends State<TablaAmortizacion> {
 
   Card cardSeccion(titulo, ruta) {
     return Card(
-      color: Colors.green,
+      color: Color(0xFF00B63F),
       child: ListTile(
+        minVerticalPadding: 40,
         title: Text(titulo),
         trailing: TextButton(
             style: ElevatedButton.styleFrom(

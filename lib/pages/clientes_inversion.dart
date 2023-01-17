@@ -17,13 +17,17 @@ class _ClienteInversionState extends State<ClienteInversion> {
       'Cliente Invf002',
       'Cliente Invf003'
     ];
-    
+
     return MaterialApp(
         title: 'Cobrax',
         home: Scaffold(
           appBar: AppBar(
-            title: const Text('Cobrax'),
+            title: const Text('Clientes inversion - Prestamos'),
             backgroundColor: Colors.black,
+            leading: Image.asset(
+              "assets/images/icon_cobrax.png",
+              scale: 8,
+            ),
           ),
           body: Container(
               child: Column(
@@ -40,8 +44,9 @@ class _ClienteInversionState extends State<ClienteInversion> {
 
   Card cardSeccion(titulo, ruta) {
     return Card(
-      color: Colors.amber,
+      color: Color(0xFF00B63F),
       child: ListTile(
+        minVerticalPadding: 40,
         title: Text(titulo),
         trailing: TextButton(
             style: ElevatedButton.styleFrom(
